@@ -1,0 +1,580 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    font-family: system-ui, sans-serif;
+    padding-top: 75px;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding:10px;
+    }
+}
+
+
+.header {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #92d158;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 75px;
+    
+}
+
+.sectionBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 1300px;
+    background-color: #000000;
+    position: relative;
+}
+
+/* my information of Home*/
+.myName {
+    position:absolute;
+    top: 230px;
+    left: 100px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.nameDis {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1300px;
+    background-color: #000000;
+    position: relative;
+}
+
+
+.photo .profile {
+    background-color: #ffffff;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 60px;
+    right:150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1300px;
+    background-color: #000000;
+    position: relative;
+}
+
+.information {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration:overline;
+}
+.description {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    height: 120px;
+    width: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+p {
+    font-size: large;
+    height: auto;
+    width: 95%;
+    text-align: justify;
+}
+
+.Skills {
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    font-size: 25px;
+}
+
+.languages {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 21px;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 15px;
+
+}
+
+.languages img {
+    width: 50px;
+    height: 50px;
+}
+
+.languages li {
+    transition: all 0.5s ease;
+}
+
+.languages li:hover {
+    transform: scale(1.2);
+}
+
+.htmlIcon {
+    position: absolute;
+    top:4px;
+    left: 340px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 700px;
+    width: 1300px;
+    position: relative;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration:overline;
+}
+
+.myProjects {
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
+
+.Projectsdescription {
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    right:100px;
+    top:200px;
+    color: #ffffff;
+}
+ul a {
+    text-decoration: none;
+}
+
+
+.theCharredMan {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    margin: 10px;
+    background-color: #000000;
+}
+
+.theCharredMan:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px 1px  rgb(4, 75, 37);
+}
+
+.dwell {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    margin: 10px;
+    background-color: #000000;
+}
+
+.dwell:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px 1px rgb(4, 75, 37);
+}
+
+.contact {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 900px;
+    width: 1300px;
+    position: relative;
+}
+
+.contactTitle {
+    position: absolute;
+    top: 10px;
+    color: white ;
+}
+
+.socialMedia {
+    position: absolute;
+    padding: 0;
+    top: 320px;
+    left: 95px;
+    flex-direction:column;
+}
+
+.socialMedia img {
+    height: 30px;
+    width: 30px;
+    padding:1px;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialMedia img:hover {
+    transform: scale(1.1);
+}
+
+.sendMessage {
+    background: rgb(19, 19, 19);
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left:230px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.contactsME {
+    background: rgb(19, 19, 19);
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    right:230px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.sendMessage {
+    padding:10px;
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendMsgTitle {
+    position: absolute;
+    top: 20px;
+    left:20px;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(232, 255, 228);
+}
+
+.name, .email, .subject, .message {
+    display: block;
+    border-style: none;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius:5px;
+    width: 320px;
+}
+
+.message {
+    height: 100px;
+}
+
+.name:focus, .email:focus, .subject:focus, .message:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 8px 1px rgba(169, 247, 151, 0.5); 
+    transition: all 0.3s ease;
+}
+
+.send {
+    padding:10px;
+    background-color: #0e691c;
+    border-style: none;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    box-shadow: 0, 2px, 8px, 1px, black;
+    color: #121212;
+    font-weight: bold;
+    width: 320px;
+
+}
+
+.send:hover {
+    transform: scale(1.04);
+    background-color: #144e0c;
+}
+
+.myEmail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    margin: 20px;
+}
+
+.contactsME {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myEmail img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.myEmail label {
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.myEmail p {
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width:350px;
+}
+
+.number img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.text-container-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.number label {
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.number p {
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width:350px;
+    margin: 20px;
+}
+
+.location img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.text-container-location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location label {
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.location p {
+    margin: 0;
+    color: #333;
+    font-size: 13px;
+}
+
+.mysocials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    width:350px;
+    margin: 20px;
+    position: relative;
+    justify-content: center;
+    height: 100px;
+}
+
+
+.socialMedialabals {
+    position: absolute;
+    flex-direction:row;
+    padding:10px;
+    bottom:1px;
+}
+
+.socialMedialabals img {
+    height: 30px;
+    width: 30px;
+    padding:1px;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialMedialabals img:hover {
+    transform: scale(1.1);
+}
+
+.text-container-media {
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+    position: absolute;
+    bottom: 45px;
+}
+
+.reach {
+    color:#ffffff;
+    font-size: 25px;
+    position: absolute;
+    top:20px;
+}
+
+.location, .number, .myEmail {
+    transition: all 0.5s ease;
+}
+
+.location:hover, .number:hover, .myEmail:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+.footer {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.jsh {
+    font-size: small;
+    color:#373737;
+}
